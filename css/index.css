@@ -41,21 +41,20 @@ body{
 }
 
 #name{
-  font-family: 'Kaushan Script', cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 100px;
   font-style: normal;
   font-weight: 400;
   margin: 0px;
-  margin-bottom: 0px;
 }
 
 #subtitle{
   margin: 0px;
-  margin-top: -25px;
-  margin-bottom: -10px;
+  margin-top: -35px;
+  margin-bottom: -5px;
   font-size: 45px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 #school{
@@ -64,14 +63,14 @@ body{
   margin-bottom: 0px;
   margin-top: 0px;
   font-family: 'Poppins', sans-serif;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 .btn{
   margin-top: 5px;
   width: 160px;
   height: 50px;
-  background: deepSkyBlue;
+  border: 2px solid deepskyblue;
   position: relative;
   border-radius: 10px;
   cursor: pointer;
@@ -80,11 +79,12 @@ body{
 
 .btn:before{
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 200;
+  font-size: 18px;
   content: "About Me";
   position: absolute;
-  top: 13px;
-  margin-left: 43px;
+  top: 10px;
+  margin-left: 38px;
   transition: all 0.5s;
 }
 
@@ -92,14 +92,16 @@ body{
   top: -40px;
 }
 
+
 .btn:after{
   content: url("ios-arrow-dropright.svg");
   position: absolute;
   top: calc(100% + 40px);
-  width: 40px;
+  width: 30px;
   margin-left: 83px;
   transform: translate(-50%, -50%);
   transition: all 0.5s;
+
 }
 
 .btn:hover:after{
