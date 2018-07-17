@@ -1,0 +1,126 @@
+body{
+
+}
+
+.content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+
+.left{
+  background-color:#F4511E;
+  flex-grow:1;
+  position: absolute;
+  top: 0;
+  left:0;
+  height: 100%;
+  width: 50%;
+  z-index: -100;
+}
+
+#About{
+  position: absolute;
+  left: 33%;
+  top: 40%;
+  color: #FAFAFA;
+  font-family: 'Poiret One', cursive;
+  font-weight: 100;
+  font-size: 100px;
+}
+
+#Navigation{
+  position: absolute;
+  left:33%;
+  top:90%;
+  font-family: 'Poppins', cursive;
+  font-size: 15px;
+  color: white;
+  white-space: pre;
+}
+
+.right{
+  background-color: #FAFAFA;
+  flex-grow:1;
+  position: absolute;
+  top: 0;
+  left:50%;
+  height: 100%;
+  width: 50%;
+  line-height: 30px;
+  letter-spacing: -0.10px;
+}
+
+.header{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin: 40px;
+  margin-left: 25px;
+  margin-bottom: 15px;
+}
+.passions{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-left: 25px;
+  width: 92%;
+}
+
+.skills{
+  font-family:'Montserrat', sans-serif;
+  margin-top:30px;
+  margin-left: 25px;
+  font-size: 1.7em;
+  font-weight: 500;
+}
+
+#particles-js{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20;
+  height: 400%;
+  width: 50%;
+  overflow: hidden;
+}
+
+.work{
+  position: absolute;
+  top:100%;
+  left:0;
+  height: 100%;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.work>.left{
+  background-color: #FB8C00;
+}
+.projects{
+  position: absolute;
+  top:200%;
+  left:0;
+  height: 100%;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.projects>.left{
+  background-color: #7CB342;
+}
+.contact{
+  position: absolute;
+  top:300%;
+  left:0;
+  height: 100%;
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+}
+.contact>.left{
+  background-color: #546E7A;
+}
