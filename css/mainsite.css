@@ -9,33 +9,46 @@ body{
 }
 
 .left{
-  background-color:#F4511E;
+  background-color:#292929;
   flex-grow:1;
   position: absolute;
   top: 0;
   left:0;
-  height: 100%;
+  height: 102%;
   width: 50%;
   z-index: -100;
 }
 
 #About{
   position: absolute;
-  left: 33%;
-  top: 40%;
+  top: 30%;
+  width:100%;
+  text-align: center;
   color: #FAFAFA;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Satisfy', cursive;
   font-weight: 100;
-  font-size: 100px;
+  font-size: 10em;
+}
+#Work{
+  position: absolute;
+  top: 30%;
+  width:100%;
+  text-align: center;
+  color: #292929;
+  font-family: 'Satisfy', cursive;
+  font-weight: 100;
+  font-size: 10em;
 }
 
 #Navigation{
   position: absolute;
-  left:33%;
-  top:90%;
+  text-align: center;
+  width:100%;
+  top:85%;
   font-family: 'Poppins', cursive;
-  font-size: 15px;
+  font-size: 1em;
   color: white;
+  font-weight: 800;
   white-space: pre;
 }
 
@@ -45,7 +58,7 @@ body{
   position: absolute;
   top: 0;
   left:50%;
-  height: 100%;
+  height: 102%;
   width: 50%;
   line-height: 30px;
   letter-spacing: -0.10px;
@@ -58,6 +71,7 @@ body{
   margin: 40px;
   margin-left: 25px;
   margin-bottom: 15px;
+  color: #292929;
 }
 .passions{
   font-family: 'Montserrat', sans-serif;
@@ -65,6 +79,7 @@ body{
   font-size: 1.2em;
   margin-left: 25px;
   width: 92%;
+  color: #292929;
 }
 
 .skills{
@@ -73,6 +88,7 @@ body{
   margin-left: 25px;
   font-size: 1.7em;
   font-weight: 500;
+  color: #292929;
 }
 
 #particles-js{
@@ -87,40 +103,54 @@ body{
 
 .work{
   position: absolute;
-  top:100%;
+  top:102%;
   left:0;
-  height: 100%;
+  height: 102%;
   width:100%;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
 }
 .work>.left{
-  background-color: #FB8C00;
+  background-color: #FAFAFA;
+}
+.work>.left>#Navigation{
+  color: #292929;
+}
+
+.work>.right{
+  background-color:#292929;
 }
 .projects{
   position: absolute;
-  top:200%;
+  top:204%;
   left:0;
-  height: 100%;
+  height: 102%;
   width:100%;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
 }
 .projects>.left{
-  background-color: #7CB342;
+  background-color: #292929;
 }
 .contact{
   position: absolute;
-  top:300%;
+  top:306%;
   left:0;
-  height: 100%;
+  height: 102%;
   width:100%;
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
 }
 .contact>.left{
-  background-color: #546E7A;
+  background-color: #FAFAFA;
+
+}
+.contact>.left>#About, .contact>.left>#Navigation{
+  color: #292929;
+}
+.contact>.right{
+  background-color: #292929;
 }
