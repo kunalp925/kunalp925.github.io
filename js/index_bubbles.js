@@ -1,12 +1,12 @@
 var canvas = document.querySelector('canvas');
 
-canvas.width = (window.innerWidth/2);
+canvas.width = (window.innerWidth);
 canvas.height = window.innerHeight;
 var color = [ "#FF3D00" , "#64DD17", "#2979FF"];
 var c = canvas.getContext('2d');
 
 var circle = [],
-    SIZE = 200;
+    SIZE = 400;
 
 for(var i = 0; i<SIZE; i++){
 
@@ -17,7 +17,7 @@ for(var i = 0; i<SIZE; i++){
       dy = Math.floor(((Math.random()-0.5)*2)),
       colors = color[Math.floor((Math.random()*5))];
       fill = color[Math.floor((Math.random()*5))];
-      if(x > (innerWidth/2)-radius || x < radius){
+      if(x > (innerWidth)-radius || x < radius){
         x = Math.floor(Math.random()*innerWidth)+radius;
       }
       if(y > innerHeight - radius || y < radius){
@@ -61,7 +61,7 @@ function Circle(x, y, dx, dy, radius, color, fill){
   }
 
   this.update = function(){
-    if(this.x > (innerWidth/2) - this.radius || this.x < this.radius){
+    if(this.x > (innerWidth) - this.radius || this.x < this.radius){
       this.dx =-this.dx;
     }
     if(this.y > innerHeight - this.radius || this.y < this.radius){

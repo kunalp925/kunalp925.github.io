@@ -19,7 +19,7 @@ canvas{
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  width: 50%;
   z-index: -2;
   background: transparent;
 }
@@ -97,13 +97,35 @@ canvas{
   color: #292929;
 }
 
+.card_img{
+  height: 75%;
+}
+
 .title{
   font-family:'Montserrat', sans-serif;
-  margin-top:30px;
-  margin-left: 25px;
   font-size: 1.7em;
   font-weight: 500;
   color: #292929;
+}
+
+.section_container{
+  margin-left:25px;
+  margin-top: 15px;
+}
+
+.education_cards{
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+
+.skills_cards{
+  margin-left:25px;
+  margin-top: 15px;
 }
 
 /* Work */
