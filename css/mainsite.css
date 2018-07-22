@@ -13,11 +13,25 @@ li a{
   text-decoration: none;
 }
 
+canvas{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+  background: transparent;
+}
+
 .content{
   display: flex;
   flex-direction: row;
   flex-wrap:wrap;
-  z-index: -20;
+  z-index: -90;
+}
+
+.background {
+
 }
 
 /* About */
@@ -33,15 +47,23 @@ li a{
   font-size: 10em;
 }
 
+.about_background{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 102%;
+  width:50%;
+  background-color: #292929;
+  z-index: -100;
+}
+
 #about_left{
-  background-color:#292929;
   flex-grow:1;
   position: absolute;
   top: 0;
   left:0;
   height: 102%;
   width: 50%;
-  z-index: -100;
 }
 
 .about_right{
@@ -74,7 +96,7 @@ li a{
   color: #292929;
 }
 
-.skills{
+.title{
   font-family:'Montserrat', sans-serif;
   margin-top:30px;
   margin-left: 25px;
@@ -96,15 +118,23 @@ li a{
   font-size: 10em;
 }
 
+.work_background{
+  position: absolute;
+  left: 0;
+  top: 102%;
+  height: 102%;
+  width:50%;
+  background-color: #FAFAFA;
+  z-index: -100;
+}
+
 #work_left{
-  background-color:#FAFAFA;
   flex-grow:1;
   position: absolute;
   top: 102%;
   left:0;
   height: 102%;
   width: 50%;
-  z-index: -100;
 }
 
 .work_right{
@@ -132,15 +162,23 @@ li a{
   font-size: 10em;
 }
 
+.projects_background{
+  position: absolute;
+  left: 0;
+  top: 204%;
+  height: 102%;
+  width:50%;
+  background-color: #292929;
+  z-index: -100;
+}
+
 #projects_left{
-  background-color:#292929;
   flex-grow:1;
   position: absolute;
   top: 204%;
   left:0;
   height: 102%;
   width: 50%;
-  z-index: -100;
 }
 
 .projects_right{
@@ -168,15 +206,23 @@ li a{
   font-size: 10em;
 }
 
+.contact_background{
+  position: absolute;
+  left: 0;
+  top: 306%;
+  height: 102%;
+  width:50%;
+  background-color: #FAFAFA;
+  z-index: -100;
+}
+
 #contact_left{
-  background-color:#FAFAFA;
   flex-grow:1;
   position: absolute;
   top: 306%;
   left:0;
   height: 102%;
   width: 50%;
-  z-index: -100;
 }
 
 .contact_right{
@@ -207,7 +253,7 @@ li a{
 }
 
 .Navigation>li>.hover_effect::after{
-  margin-top:2px;
+  margin-top:0px;
   content: '';
   display: block;
   width: 0;
@@ -235,7 +281,7 @@ li a{
 }
 
 .Navigation_black>li>.hover_effect_black::after{
-  margin-top:2px;
+  margin-top:0px;
   content: '';
   display: block;
   width: 0;

@@ -2,35 +2,21 @@ var canvas = document.querySelector('canvas');
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
-var color = [ "#336699" , "#666666", "#999999"];
+var color = [ "#FF3D00" , "#00E676", "#2979FF", "37C4DFF"];
 var c = canvas.getContext('2d');
 
-console.log("Width: " + innerWidth);
-console.log("Height: " + innerHeight);
-
 var circle = [],
-    SIZE = 5000;
-
-var mouse = {
-    x: undefined,
-    y: undefined
-}
-
-window.addEventListener("mousemove", function(event){
-  mouse.x = event.x;
-  mouse.y = event.y;
-});
-
+    SIZE = 500;
 
 for(var i = 0; i<SIZE; i++){
 
-  var radius = Math.floor((Math.random()*10)),
+  var radius = Math.floor((Math.random()*5)),
       x = Math.floor(Math.random()*innerWidth)+radius,
       y = Math.floor(Math.random()*innerHeight)+radius,
       dx = Math.floor(((Math.random()-0.5)*2)),
       dy = Math.floor(((Math.random()-0.5)*2)),
-      colors = color[Math.floor((Math.random()*4))];
-      fill = color[Math.floor((Math.random()*4))];
+      colors = color[Math.floor((Math.random()*5))];
+      fill = color[Math.floor((Math.random()*5))];
       if(x > innerWidth-radius || x < radius){
         x = Math.floor(Math.random()*innerWidth)+radius;
       }
@@ -44,15 +30,15 @@ for(var i = 0; i<SIZE; i++){
         dy = Math.floor(((Math.random()-0.5)*3));
       }
 
-      console.log("Color: " + colors);
-      console.log("Starting x loc: " + x);
-      console.log("Starting y loc: " + y);
-      console.log("Starting dx: " + dx);
-      console.log("Starting dy: " + dy);
-      console.log("Radius: " + radius);
+      // console.log("Color: " + colors);
+      // console.log("Starting x loc: " + x);
+      // console.log("Starting y loc: " + y);
+      // console.log("Starting dx: " + dx);
+      // console.log("Starting dy: " + dy);
+      // console.log("Radius: " + radius);
 
 
-      circle.push(new Circle(x, y, dx, dy, 0, colors, fill));
+      circle.push(new Circle(x, y, dx, dy, radius, colors, fill));
 }
 
 
@@ -83,15 +69,6 @@ function Circle(x, y, dx, dy, radius, color, fill){
     }
     this.x += this.dx;
     this.y += this.dy;
-
-    if (Math.abs(mouse.x - this.x) < 20 && Math.abs(mouse.y - this.y) < 20 && this.radius < 40){
-      this.radius += 0.5;
-    }
-
-    else if(this.radius > 0) {
-        this.radius -= 0.5;
-    }
-
 
     this.draw();
   }
